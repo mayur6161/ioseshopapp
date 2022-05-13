@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "412095728219",
+    "project_id": "gogreenplantshop-c0d18",
+    "storage_bucket": "gogreenplantshop-c0d18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412095728219:android:8f4ddf0f55a546c6f90d7e",
+        "android_client_info": {
+          "package_name": "com.gogreen.plantshop26"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412095728219-el5im3lf6obtgnckfqo9euc4ml15hqlq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAykmeB-rfdXP2PNj_mYjBp0uCxT5RFDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412095728219-el5im3lf6obtgnckfqo9euc4ml15hqlq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
