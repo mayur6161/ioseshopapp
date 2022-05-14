@@ -29,6 +29,13 @@
             {
               "client_id": "412095728219-el5im3lf6obtgnckfqo9euc4ml15hqlq.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "412095728219-ht1qs14fnv1hvud7dd006ssbbo2coil5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gogreen.plantshop26"
+              }
             }
           ]
         }

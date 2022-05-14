@@ -1,4 +1,5 @@
-import 'package:carousel_slider/carousel_options.dart';
+import 'dart:developer';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_shop_app/category/category_menu.dart';
@@ -13,7 +14,6 @@ import 'package:e_shop_app/view_more_screen/page_one_viewmore.dart';
 import 'package:e_shop_app/view_more_screen/page_three_viewmore.dart';
 import 'package:e_shop_app/view_more_screen/page_two_viewmore.dart';
 import 'package:e_shop_app/view_more_screen/plant_under_catergory_list.dart';
-import 'package:e_shop_app/view_more_screen/view_more_screen.dart';
 import 'package:e_shop_app/widgets/colors.dart';
 import 'package:e_shop_app/widgets/my_drawer.dart';
 import 'package:e_shop_app/widgets/search_box.dart';
@@ -955,6 +955,7 @@ class _SlideBarState extends State<SlideBar> {
   Future<Widget> _getImage(BuildContext context, String imageName) async {
     Image image;
     final value = await FireStorageService.loadImage(context, imageName);
+    log(value);
     image = Image.network(
       value.toString(),
       fit: BoxFit.fill,
