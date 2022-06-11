@@ -12,6 +12,7 @@ import '../widgets/user_home_product_card_widget.dart';
 import 'ios_card.dart';
 import 'ios_category.dart';
 import 'ios_slidebar.dart';
+import 'ios_topbar.dart';
 
 // ios menu screen without login
 
@@ -80,7 +81,7 @@ class IosMenu extends StatelessWidget {
                                   as Map<String, dynamic>);
                           return Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: UserHomeProductCardWidget2(
+                            child: IosUserHomeProductCardWidget2(
                                 itemModel: model,
                                 context: context,
                                 productId: dataSnapshot.data!.docs[index].id),
@@ -160,7 +161,7 @@ class IosMenu extends StatelessWidget {
                                   as Map<String, dynamic>);
                           return Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: NewInList(
+                            child: IosNewInList(
                                 itemModel: model,
                                 context: context,
                                 productId: dataSnapshot.data!.docs[index].id),
