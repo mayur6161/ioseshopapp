@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_shop_app/DialogBox/error_dialog.dart';
 import 'package:e_shop_app/config/config.dart';
+import 'package:e_shop_app/ios_screen/ios_menu.dart';
 import 'package:e_shop_app/screens/home_screen.dart';
 import 'package:e_shop_app/widgets/colors.dart';
 import 'package:e_shop_app/widgets/custom_text_field.dart';
@@ -44,7 +45,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
-          Container(height: 50),
+
+
+          Container(height: 40),
           const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
@@ -182,6 +185,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     fontSize: 17,
                     fontFamily: 'MonoBold'),
               ),
+            ),
+          ),
+          Container(height: 20,),
+
+          Container(
+            child:  TextButton(
+              child: const Align(
+                  alignment: Alignment.center,
+                  child: Text("View Shop", style: TextStyle(fontSize: 18, color: Colors.white, fontFamily: "SFCMed"), )),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => IosMenu()));
+              },
             ),
           ),
           const SizedBox(
