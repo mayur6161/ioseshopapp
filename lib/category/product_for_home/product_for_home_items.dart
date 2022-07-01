@@ -29,41 +29,41 @@ class _ProductForHomeState extends State<ProductForHome> {
         return false;
       },
       child: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back, color: Colors.white),
-            onPressed: () {
-              Route route = MaterialPageRoute(builder: (c) => Category_list());
-              Navigator.pushReplacement(context, route);
-            },
-          ),
-          title: const Text('Product for Home'),
-        ),
-        body: StreamBuilder<QuerySnapshot>(
-          stream: FirebaseFirestore.instance
-              .collection("product_for_home")
-              .orderBy("publishedDate")
-              .snapshots(),
-          builder: (c, snapshot) {
-            return snapshot.hasData
-                ? Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ListView.builder(
-                itemCount: snapshot.data!.docs.length,
-                itemBuilder: (c, index) {
-                  ItemModel model = ItemModel.fromJson(
-                      snapshot.data!.docs[index].data()!
-                      as Map<String, dynamic>);
-                  return adminProductCardWidget(
-                      model, context, snapshot.data!.docs[index].id);
-                },
-              ),
-            )
-                : Center(
-              child: circularProgress(),
-            );
-          },
-        ),
+        // appBar: AppBar(
+        //   leading: IconButton(
+        //     icon: const Icon(Icons.arrow_back, color: Colors.white),
+        //     onPressed: () {
+        //       Route route = MaterialPageRoute(builder: (c) => Category_list());
+        //       Navigator.pushReplacement(context, route);
+        //     },
+        //   ),
+        //   title: const Text('Product for Home'),
+        // ),
+        // body: StreamBuilder<QuerySnapshot>(
+        //   stream: FirebaseFirestore.instance
+        //       .collection("product_for_home")
+        //       .orderBy("publishedDate")
+        //       .snapshots(),
+        //   builder: (c, snapshot) {
+        //     return snapshot.hasData
+        //         ? Padding(
+        //       padding: const EdgeInsets.all(8.0),
+        //       child: ListView.builder(
+        //         itemCount: snapshot.data!.docs.length,
+        //         itemBuilder: (c, index) {
+        //           ItemModel model = ItemModel.fromJson(
+        //               snapshot.data!.docs[index].data()!
+        //               as Map<String, dynamic>);
+        //           return adminProductCardWidget(
+        //               model, context, snapshot.data!.docs[index].id);
+        //         },
+        //       ),
+        //     )
+        //         : Center(
+        //       child: circularProgress(),
+        //     );
+        //   },
+        // ),
       ),
     );
   }

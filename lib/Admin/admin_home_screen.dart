@@ -97,58 +97,59 @@ class _AdminHomeScreenState extends State<AdminHomeScreen> {
         return false as Future<bool>;
       },
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text("Home"),
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [kPrimaryColor, kPrimaryColor],
-                begin: FractionalOffset(0.0, 0.0),
-                end: FractionalOffset(1.0, 0.0),
-                stops: [0.0, 1.0],
-                tileMode: TileMode.clamp,
-              ),
-            ),
+          //   appBar: AppBar(
+          //     centerTitle: true,
+          //     title: const Text("Home"),
+          //     flexibleSpace: Container(
+          //       decoration: const BoxDecoration(
+          //         gradient: LinearGradient(
+          //           colors: [kPrimaryColor, kPrimaryColor],
+          //           begin: FractionalOffset(0.0, 0.0),
+          //           end: FractionalOffset(1.0, 0.0),
+          //           stops: [0.0, 1.0],
+          //           tileMode: TileMode.clamp,
+          //         ),
+          //       ),
+          //     ),
+          //   ),
+          //   drawer: const AdminDrawer(),
+          //   body: StreamBuilder<QuerySnapshot>(
+          //     stream: FirebaseFirestore.instance
+          //         .collection("items")
+          //         .orderBy("publishedDate")
+          //         .snapshots(),
+          //     builder: (c, snapshot) {
+          //       return snapshot.hasData
+          //           ? Padding(
+          //               padding: const EdgeInsets.all(8.0),
+          //               child: ListView.builder(
+          //                 itemCount: snapshot.data!.docs.length,
+          //                 itemBuilder: (c, index) {
+          //                   ItemModel model = ItemModel.fromJson(
+          //                       snapshot.data!.docs[index].data()!
+          //                           as Map<String, dynamic>);
+          //                   return adminProductCardWidget(
+          //                       model, context, snapshot.data!.docs[index].id);
+          //                 },
+          //               ),
+          //             )
+          //           : Center(
+          //               child: circularProgress(),
+          //             );
+          //     },
+          //   ),
+          //   floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+          //   floatingActionButton: FloatingActionButton(
+          //     child: const Icon(Icons.add),
+          //     backgroundColor: kPrimaryColor,
+          //     onPressed: () {
+          //       Route route =
+          //           MaterialPageRoute(builder: (c) => AddProductListPage());
+          //       Navigator.push(context, route);
+          //     },
+          //   ),
+          // ),
           ),
-        ),
-        drawer: const AdminDrawer(),
-        body: StreamBuilder<QuerySnapshot>(
-          stream: FirebaseFirestore.instance
-              .collection("items")
-              .orderBy("publishedDate")
-              .snapshots(),
-          builder: (c, snapshot) {
-            return snapshot.hasData
-                ? Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ListView.builder(
-                      itemCount: snapshot.data!.docs.length,
-                      itemBuilder: (c, index) {
-                        ItemModel model = ItemModel.fromJson(
-                            snapshot.data!.docs[index].data()!
-                                as Map<String, dynamic>);
-                        return adminProductCardWidget(
-                            model, context, snapshot.data!.docs[index].id);
-                      },
-                    ),
-                  )
-                : Center(
-                    child: circularProgress(),
-                  );
-          },
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-        floatingActionButton: FloatingActionButton(
-          child: const Icon(Icons.add),
-          backgroundColor: kPrimaryColor,
-          onPressed: () {
-            Route route =
-                MaterialPageRoute(builder: (c) => AddProductListPage());
-            Navigator.push(context, route);
-          },
-        ),
-      ),
     );
   }
 }

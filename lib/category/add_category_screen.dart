@@ -16,114 +16,114 @@ class AddCategoryScreen extends StatelessWidget {
         return false;
       },
       child: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back, color: Colors.white),
-            onPressed: () {
-              Route route =
-              MaterialPageRoute(builder: (c) => const AdminHomeScreen());
-              Navigator.pushReplacement(context, route);
-            },
-          ),
-
-          title: const Text('Add Product By Category'),
-        ),
-        body: Column(
-          children: [
-            Container(
-              color: Colors.deepPurple,
-              height: 100,
-              width: width,
-              child: TextButton(
-                onPressed: () {
-                  Route route = MaterialPageRoute(
-                      builder: (c) => const AddProductScreenCatergory(
-                        editOrAdd: "Add",
-                        productId: "1",
-                      ));
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  "category add items",
-                  style: TextStyle(
-                    color: kBackgroundColor,
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              color: Colors.yellow,
-              height: 100,
-              width: width,
-              child: TextButton(
-                onPressed: () {
-                  Route route = MaterialPageRoute(
-                      builder: (c) => const ProductForHomeAdd(
-                        editOrAdd: "Add",
-                        productId: "1",
-                      ));
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  "Product For Home category",
-                  style: TextStyle(
-                    color: kBackgroundColor,
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              color: Colors.grey,
-              height: 100,
-              width: width,
-              child: TextButton(
-                onPressed: () {
-                  Route route = MaterialPageRoute(
-                      builder: (c) => const AddProductScreenCatergory(
-                        editOrAdd: "Add",
-                        productId: "1",
-                      ));
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  "category",
-                  style: TextStyle(
-                    color: kBackgroundColor,
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              color: Colors.brown,
-              height: 100,
-              width: width,
-              child: TextButton(
-                onPressed: () {
-                  Route route = MaterialPageRoute(
-                      builder: (c) => const AddProductScreenCatergory(
-                        editOrAdd: "Add",
-                        productId: "1",
-                      ));
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  "category",
-                  style: TextStyle(
-                    color: kBackgroundColor,
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
+        // appBar: AppBar(
+        //   leading: IconButton(
+        //     icon: const Icon(Icons.arrow_back, color: Colors.white),
+        //     onPressed: () {
+        //       Route route =
+        //       MaterialPageRoute(builder: (c) => const AdminHomeScreen());
+        //       Navigator.pushReplacement(context, route);
+        //     },
+        //   ),
+        //
+        //   title: const Text('Add Product By Category'),
+        // ),
+        // body: Column(
+        //   children: [
+        //     Container(
+        //       color: Colors.deepPurple,
+        //       height: 100,
+        //       width: width,
+        //       child: TextButton(
+        //         onPressed: () {
+        //           Route route = MaterialPageRoute(
+        //               builder: (c) => const AddProductScreenCatergory(
+        //                 editOrAdd: "Add",
+        //                 productId: "1",
+        //               ));
+        //           Navigator.push(context, route);
+        //         },
+        //         child: const Text(
+        //           "category add items",
+        //           style: TextStyle(
+        //             color: kBackgroundColor,
+        //             fontSize: 16.0,
+        //             fontWeight: FontWeight.bold,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //     Container(
+        //       color: Colors.yellow,
+        //       height: 100,
+        //       width: width,
+        //       child: TextButton(
+        //         onPressed: () {
+        //           Route route = MaterialPageRoute(
+        //               builder: (c) => const ProductForHomeAdd(
+        //                 editOrAdd: "Add",
+        //                 productId: "1",
+        //               ));
+        //           Navigator.push(context, route);
+        //         },
+        //         child: const Text(
+        //           "Product For Home category",
+        //           style: TextStyle(
+        //             color: kBackgroundColor,
+        //             fontSize: 16.0,
+        //             fontWeight: FontWeight.bold,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //     Container(
+        //       color: Colors.grey,
+        //       height: 100,
+        //       width: width,
+        //       child: TextButton(
+        //         onPressed: () {
+        //           Route route = MaterialPageRoute(
+        //               builder: (c) => const AddProductScreenCatergory(
+        //                 editOrAdd: "Add",
+        //                 productId: "1",
+        //               ));
+        //           Navigator.push(context, route);
+        //         },
+        //         child: const Text(
+        //           "category",
+        //           style: TextStyle(
+        //             color: kBackgroundColor,
+        //             fontSize: 16.0,
+        //             fontWeight: FontWeight.bold,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //     Container(
+        //       color: Colors.brown,
+        //       height: 100,
+        //       width: width,
+        //       child: TextButton(
+        //         onPressed: () {
+        //           Route route = MaterialPageRoute(
+        //               builder: (c) => const AddProductScreenCatergory(
+        //                 editOrAdd: "Add",
+        //                 productId: "1",
+        //               ));
+        //           Navigator.push(context, route);
+        //         },
+        //         child: const Text(
+        //           "category",
+        //           style: TextStyle(
+        //             color: kBackgroundColor,
+        //             fontSize: 16.0,
+        //             fontWeight: FontWeight.bold,
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //   ],
+        // ),
       ),
     );
   }
