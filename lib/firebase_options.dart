@@ -71,6 +71,6 @@ class DefaultFirebaseOptions {
     projectId: 'gogreenplantshop-c0d18',
     storageBucket: 'gogreenplantshop-c0d18.appspot.com',
     iosClientId: '412095728219-ht1qs14fnv1hvud7dd006ssbbo2coil5.apps.googleusercontent.com',
-    iosBundleId: 'com.gogreen.plantshop26',
+    iosBundleId: 'com.gogreen.plantshop28',
   );
 }

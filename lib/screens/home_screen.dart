@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
 
     final newVersion = NewVersion(
-      iOSId: 'com.gogreen.plantshop26',
+      iOSId: 'com.gogreen.plantshop28',
       androidId: 'com.gogreen.plantshop26',
     );
 

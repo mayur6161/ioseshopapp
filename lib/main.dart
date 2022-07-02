@@ -78,7 +78,7 @@ class _SplashScreenState extends State<SplashScreen> {
     userData().then((value) => displaySplash());
 
     final newVersion = NewVersion(
-      iOSId: 'com.gogreen.plantshop26',
+      iOSId: 'com.gogreen.plantshop28',
       androidId: 'com.gogreen.plantshop26',
     );
 
